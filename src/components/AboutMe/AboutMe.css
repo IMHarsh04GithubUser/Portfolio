@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+body{
+    height: 780px;
+}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -18,19 +21,22 @@
     transform: scale(1.2);
 }
 
-.my_skills > h1,.my_skills > label,.content_intro>p,.content_intro>h1,.profile > div > p{
-    animation: appear linear;
-    animation-range:entry 0% cover 20%;
-    animation-timeline:view() ;
+@media screen and (max-width:800px) {
+    .my_skills > h1,.my_skills > label,.content_intro>p,.content_intro>h1,.profile > div > p{
+        animation: appear linear;
+        animation-range:entry 0% cover 10%;
+        animation-timeline:view() ;
+    }
+    
+    @keyframes appear {
+        from{
+          opacity: 0;
+         
+        }
+        to{
+          opacity: 1;
+          
+        }
+      }
+    
 }
-
-@keyframes appear {
-    from{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
