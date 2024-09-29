@@ -1,6 +1,7 @@
 import P1 from "../../assets/P1.png";
 import P3 from "../../assets/P3.png";
 import P4 from "../../assets/P4.png";
+import './MyProjects.css'
 export const Cards = () => {
   const cardsinfo = [
     {
@@ -25,7 +26,7 @@ export const Cards = () => {
     {cardsinfo.map((data1, index) => {
         return (
           <>
-            <div class=" max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:scale-125 shadow-xl shadow-cyan-400">
+            <div class="project_card max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 hover:scale-125 shadow-xl shadow-cyan-400">
               <a href="#">
                 <img class="rounded-t-lg" src={data1.src} alt={data1.heading} />
               </a>

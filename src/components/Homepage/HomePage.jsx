@@ -45,7 +45,7 @@ const Homepage_Portfolio = () => {
             <img
               src={Photo}
               alt="Profile_Pic"
-              className="hover:skew-x-12 rounded-2xl"
+              className="hover:skew-x-12 rounded-2xl my-10"
               id="Profile_Img"
             />
           </div>

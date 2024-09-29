@@ -20,3 +20,20 @@
     from, to { border-color: transparent; }
     50% { border-color: white; }
 }
+
+.project_card:nth-child(2),.project_card:nth-child(3){
+    animation: appear linear;
+    animation-range: entry 0% cover 40%;
+    animation-timeline: view();
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

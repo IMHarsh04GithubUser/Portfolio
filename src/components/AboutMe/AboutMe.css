@@ -17,3 +17,20 @@
 .icon-linkedin:hover{
     transform: scale(1.2);
 }
+
+.my_skills > h1,.my_skills > label,.content_intro>p,.content_intro>h1,.profile > div > p{
+    animation: appear linear;
+    animation-range:entry 0% cover 20%;
+    animation-timeline:view() ;
+}
+
+@keyframes appear {
+    from{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
