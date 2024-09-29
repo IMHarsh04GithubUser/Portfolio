@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+
+.contactme_main{
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.typing-container {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 12ch;
+    overflow: hidden;   
+    margin-left: 30%;
+    animation: typing 3s steps(24, end) infinite alternate-reverse, blink-caret 0.75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 12ch; }
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+.contact_container{
+    margin:20px 0 0 10%;
+    width: 90%;
+}
+
+.font_deco{
+    background: -webkit-linear-gradient(85deg, rgba(184,184,209,1) 11%, rgba(183,172,188,1) 17%, rgba(177,98,55,1) 50%);
+ -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact_about{
+    width: 40%;
+}
+
+form{
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+input[type="text"],input[type="email"],textarea{
+    
+    background-color: #33333A;
+    width: 80%;
+    margin: 10px 0 10px 0;
+}
+
+
+.button {
+    --😀: #644dff;
+    --😀😀: #4836bb;
+    --😀😀😀: #654dff63;
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: var(--😀);
+    border: 2px solid var(--😀😀);
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 var(--😀😀);
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px var(--😀😀😀));
+  }
+  
+  .button:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 var(--😀😀😀);
+  }

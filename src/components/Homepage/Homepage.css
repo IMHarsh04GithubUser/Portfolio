@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+.typing-container-home {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 64px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 10ch;
+    overflow: hidden;
+    color: white;
+    animation: typing 3s steps(24, end) infinite alternate-reverse, blink-caret 0.75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 10ch; }
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+#Profile_Img{
+    /* border-radius: 50%; */
+    height: 350px;
+    width: 1550px;
+    box-shadow: 0 0 20px cyan;
+    
+    
+}
+
+
+.Icon_Container{
+    animation-name: floating_Icon;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+@keyframes floating_Icon {
+    0%{
+        position: absolute;
+        top:2%
+    }
+    100%{
+        position: absolute;
+        top: 4%;
+    }
+}
+
+#Insta_Icon,#Linkedin_Icon,#Twitter_Icon{
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+#Insta_Icon:hover,#Linkedin_Icon:hover,#Twitter_Icon:hover{
+    color: red;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+
+#HireMe{
+    box-shadow:0 0 20px cyan;
+    animation: glow1 ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes glow1 {
+    0%{
+        box-shadow: 0 0 20px cyan;
+    }
+    
+
+    100%{
+        box-shadow: 0 0 100px cyan;
+    }
+}
+
+/*CONTACT_POPUP*/
+
+/* From Uiverse.io by aboalsim114 */ 
+.form_popup{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #0077be, #3b8df2);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation: form-animation 0.5s ease-in-out;
+  }
+  
+  @keyframes form-animation {
+    from {
+      transform: rotateX(-30deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    color: rgb(255, 255, 255);
+    border: 2px solid #3b8df2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .input::placeholder {
+    color: #fff;
+  }
+  
+  .input:hover,
+  .input:focus {
+    border-color: #3b8df2;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05) rotateY(20deg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .btn_popup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b8df2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateX(-10deg);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .btn_popup:hover {
+    background-color: #0077be;
+    font-size: 17px;
+    transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  

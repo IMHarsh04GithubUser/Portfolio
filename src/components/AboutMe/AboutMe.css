@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+#photo_about{
+    border: solid 5px red;
+
+}
+
+.font_raleway_Protest{
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+
+.icon-linkedin:hover{
+    transform: scale(1.2);
+}
