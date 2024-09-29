@@ -46,7 +46,7 @@ export const SkewProvider = ({ children }) => {
       return;
     }
     axios
-      .post("http://localhost:4001/connect", { name, email, textarea })
+      .post("https://portfolio-backend-cbs4.onrender.com/connect", { name, email, textarea })
       .then((result) => {
         if (result.status === 201) {
           toast.success("Thank You For Connecting With Me! 😁");
