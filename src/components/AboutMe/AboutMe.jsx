@@ -99,7 +99,7 @@ const AboutMe = () => {
               </p>
             </div>
 
-            <div className="profile text-white flex flex-row md:flex-row gap-6 p-3 leading-7">
+            <div className="profile text-white flex flex-row md:flex-row gap-6 p-3 leading-7 text-sm lg:text-xl md:text-xl">
               <div className="font-bold">
                 <p>Profile:</p>
                 <p>Domain:</p>
