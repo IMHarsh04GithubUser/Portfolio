@@ -20,6 +20,9 @@ body{
 .icon-linkedin:hover{
     transform: scale(1.2);
 }
+.profile_font_ans{
+    font-size: 10px;
+}
 
 @media screen and (max-width:800px) {
     .my_skills > h1,.my_skills > label,.content_intro>p,.content_intro>h1,.profile > div > p{
