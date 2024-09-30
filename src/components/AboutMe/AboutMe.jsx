@@ -108,7 +108,7 @@ const AboutMe = () => {
                 <p>BI Tools:</p>
                 <p>Interest:</p>
               </div>
-              <div className="font-light text-gray-400">
+              <div className="profile_font_ans font-light text-gray-400 lg:text-xl md:text-xl">
                 <p>Web Developer and Data Analyst</p>
                 <p>MERN Stack, UI/UX</p>
                 <p>BCA</p>
