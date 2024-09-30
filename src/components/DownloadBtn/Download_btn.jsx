@@ -1,5 +1,5 @@
 import './Download_btn.css'
-import resume from '../../assets/Resume.pdf'
+
 const Downloadbtn = () => {
     return (<>
     
@@ -25,7 +25,7 @@ const Downloadbtn = () => {
       <div class="square"></div>
     </span>
     <p class="title">Download CV</p>
-    <p class="title"><a href={resume} download='Resume'>open</a></p>
+    <p class="title"><a href='' download='Resume'>open</a></p>
   </label>
 </div>
 
